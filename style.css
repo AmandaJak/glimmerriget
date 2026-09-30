@@ -63,6 +63,10 @@ h2 {
 
 .narrator { margin: 16px 0; padding: 4px 8px; color: var(--narrator); }
 .narrator .who { display: block; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
-.narrator p { margin: 0 0 12px; font-size: 21px; font-weight: 400; }
+.narrator p {
+  margin: 0 0 18px; padding: 8px 0 8px 14px;
+  border-left: 3px solid #4a3573;
+  font-size: 22px; font-weight: 400;
+}
 
 .next { display: block; margin-top: 48px; padding: 20px; text-align: center; text-decoration: none; font-size: 22px; font-weight: 800; color: #1a0d2e; background: var(--direktor); border-radius: 16px; }
