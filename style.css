@@ -1,0 +1,68 @@
+:root {
+  --bg: #120a1f;
+  --card: #1e1233;
+  --text: #f4eefc;
+  --muted: #a99bc4;
+  --narrator: #cfc6e3;
+  --direktor: #ffd24a;
+  --revisor: #4be3d0;
+  --glitch: #ff4fd8;
+  --guest: #b79bff;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #2a1450 0, var(--bg) 60%) fixed;
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+.topbar {
+  position: sticky; top: 0; z-index: 10;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 16px;
+  background: rgba(18, 10, 31, .95);
+  border-bottom: 1px solid #3a2560;
+}
+.topbar a {
+  color: var(--direktor); text-decoration: none; font-weight: 700;
+  padding: 8px 14px; border: 2px solid var(--direktor); border-radius: 999px;
+  font-size: 18px;
+}
+.topbar span { color: var(--muted); font-size: 16px; text-transform: uppercase; letter-spacing: .1em; }
+main { max-width: 720px; margin: 0 auto; padding: 16px 16px 80px; }
+h1 { font-size: 34px; text-align: center; margin: 24px 0 8px; color: var(--direktor); }
+h2 {
+  font-size: 18px; text-transform: uppercase; letter-spacing: .15em;
+  color: var(--muted); margin: 40px 0 12px; text-align: center;
+}
+.sub { text-align: center; color: var(--muted); margin: 0 0 28px; }
+
+/* Index menu */
+.menu { display: grid; gap: 16px; margin-top: 24px; }
+.menu a {
+  display: block; padding: 28px 20px; text-align: center; text-decoration: none;
+  font-size: 30px; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
+  color: #1a0d2e; background: linear-gradient(135deg, #ffd24a, #ff9ae8);
+  border-radius: 18px;
+}
+.menu a small { display: block; font-size: 15px; font-weight: 500; letter-spacing: 0; text-transform: none; opacity: .75; }
+
+/* Dialogue */
+.line { margin: 16px 0; padding: 12px 16px; border-left: 8px solid; border-radius: 10px; background: var(--card); }
+.line .who { display: block; font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: .12em; margin-bottom: 2px; }
+.line p { margin: 0; font-size: 26px; font-weight: 600; }
+.dir { color: var(--muted); font-style: italic; font-size: 20px; font-weight: 400; }
+.direktor { border-color: var(--direktor); } .direktor .who { color: var(--direktor); }
+.revisor { border-color: var(--revisor); } .revisor .who { color: var(--revisor); }
+.glitch { border-color: var(--glitch); } .glitch .who { color: var(--glitch); }
+.glitch p { font-family: "Courier New", monospace; }
+.guest { border-color: var(--guest); } .guest .who { color: var(--guest); }
+
+.narrator { margin: 16px 0; padding: 4px 8px; color: var(--narrator); }
+.narrator .who { display: block; font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); }
+.narrator p { margin: 0 0 12px; font-size: 21px; font-weight: 400; }
+
+.next { display: block; margin-top: 48px; padding: 20px; text-align: center; text-decoration: none; font-size: 22px; font-weight: 800; color: #1a0d2e; background: var(--direktor); border-radius: 16px; }
